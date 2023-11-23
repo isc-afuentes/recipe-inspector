@@ -8,7 +8,10 @@ git clone https://github.com/isc-afuentes/recipe-inspector
 ```
 
 ## Configure you OpenAI API Key
-You need to configure your own OpenAI API key
+You need to configure your own OpenAI API key.
+
+If you don't have already an OpenAI API Key you will need to create an OpenAI account, navigate to the API key page and "Create new secret key".
+
 Create a `.env` file in the same directory you have just cloned the repository with a content like this:
 ```
 OPENAI_API_KEY="<your-api-key>"
