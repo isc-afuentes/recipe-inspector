@@ -2,19 +2,19 @@ Load CSV files in InterSystems IRIS through Foreign Tables and run some analysis
 
 This example will guide you through loading a recipe dataset and building your own analyzer to score the recipes for you :)
 
-## Clone repository
+## Clone repository
 ```console
-git clone https://github.com/<>
+git clone https://github.com/isc-afuentes/recipe-inspector
 ```
 
-## Configure you OpenAI API Key
+## Configure you OpenAI API Key
 You need to configure your own OpenAI API key
 Create a `.env` file in the same directory you have just cloned the repository with a content like this:
 ```
 OPENAI_API_KEY="<your-api-key>"
 ```
 
-## Run containers
+## Run containers
 Run InterSystems IRIS container:
 ```
 docker compose up -d
