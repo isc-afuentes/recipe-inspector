@@ -1,0 +1,6 @@
+# local files
+local/*
+
+# .env file (contains OpenAI APIKEY)
+.env
+
