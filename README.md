@@ -176,17 +176,16 @@ Of course you would like to run the analysis on the recipes we have loaded previ
 You can analyze a range of recipes IDs this way:
 ```objectscript
 USER>do ##class(yummy.Utils).AnalyzeRange(1,10)
-
-> Recipe 1 (.01477212s)
-> Recipe 2 (.01831726s)
-> Recipe 3 (.01257766s)
-> Recipe 4 (.01083377s)
-> Recipe 5 (.0157548s)
-> Recipe 6 (.01357869s)
-> Recipe 7 (.0153087s)
-> Recipe 8 (.01437347s)
-> Recipe 9 (.01668807s)
-> Recipe 10 (.01537555s)
+> Recipe 1 (1.755185s)
+> Recipe 2 (2.559526s)
+> Recipe 3 (1.556895s)
+> Recipe 4 (1.720246s)
+> Recipe 5 (1.689123s)
+> Recipe 6 (2.404745s)
+> Recipe 7 (1.538208s)
+> Recipe 8 (1.33001s)
+> Recipe 9 (1.49972s)
+> Recipe 10 (1.425612s)
 ```
 
 After that, have a look again at your recipe table and check the results

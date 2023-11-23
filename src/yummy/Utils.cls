@@ -52,13 +52,21 @@ ClassMethod Analyze(recipeId As %Integer)
         }
 
         write !,"> Recipe ",recipeId
+        
+        // new analysis run: reset score, score
+        set recipe.YummyScore = 0
+        set recipe.Reason = ""
+        
+        // run all required analysis
         set analysis = ##class(yummy.analysis.SimpleOpenAI).%New(recipe)
         do analysis.Run()
         do analysis.UpdateRecipe()
+        
+        // save recipe
         $$$ThrowOnError(recipe.%Save())
 
         set end = $zhorolog
-        write " ("_(end-begin/100)_"s)",!
+        write " ("_(end-begin)_"s)",!
 
     } catch ex {
         throw ex
